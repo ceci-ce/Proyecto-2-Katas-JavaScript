@@ -1,0 +1,86 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body y tema por defecto (claro) */
+body {
+    background-color: #f2f2f2;
+    color: #222;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tema oscuro */
+body.dark-theme {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+}
+
+/* Botón de tema */
+#themeBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#themeBtn:hover {
+    transform: scale(1.2);
+}
+
+/* Contenedor de albums */
+#container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0;
+    list-style: none;
+}
+
+/* Cada album */
+#container li {
+    padding: 15px 20px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover */
+#container li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Ajuste para tema oscuro */
+body.dark-theme #container li {
+    background-color: #1e1e1e;
+}
+
+body.dark-theme #container li:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #333;
+    margin-top: 30px;
+}
